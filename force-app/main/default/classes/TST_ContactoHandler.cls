@@ -57,7 +57,7 @@ public with sharing class TST_ContactoHandler {
 
         if(!email.isEmpty()){
             //metodo de insercion
-            doInsertEmail()
+            doInsertEmail();
         }
     }
     public static void doInsertTask(List<Task> tasks){

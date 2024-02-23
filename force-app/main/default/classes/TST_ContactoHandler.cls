@@ -6,7 +6,7 @@
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 **/
 public with sharing class TST_ContactoHandler {
-    public execute(
+    public static void execute(
         List<Contact> newContact, Map<Id, Contact> newContactMap,
         List<Contact> oldContact,Map<Id, Contact> oldContactMap,
         String operationType){

@@ -61,14 +61,14 @@ public with sharing class TST_ContactoHandler {
         }
     }
     public static void doInsertTask(List<Task> tasks){
-        if(!tasksToCreate.isEmpty()) {
-            insert tasksToCreate;
+        if(!tasks.isEmpty()) {
+            insert tasks;
         }
     }
     
     public static void doInsertEmail(List<Messaging.SingleEmailMessage> emails){
-        if(!emailsToSend.isEmpty()) {
-            Messaging.sendEmail(emailsToSend);
+        if(!emails.isEmpty()) {
+            Messaging.sendEmail(emails);
         }
     }
 }

@@ -15,7 +15,7 @@ public with sharing class TST_ContactoHanlderTest {
     @isTest
     static void contactCreation() {
         Contact con = [SELECT Id, FirstName,LastName,email,tipoDeContacto Limit 1];
-        con,tipoDeContacto = 'Importante';
+        con.tipoDeContacto = 'Importante';
         Test.startTest();
         System.runAs(contextuser){
             insert con;

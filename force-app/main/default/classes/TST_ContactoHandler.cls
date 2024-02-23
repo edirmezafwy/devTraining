@@ -12,7 +12,7 @@ public with sharing class TST_ContactoHandler {
         String operationType){
 
             switch on operationType {
-                when AFTER_INSERT  {
+                when 'AFTER_INSERT'  {
                     executeAfterInsert(newContact,newContactMap);
                 }
                 when else {

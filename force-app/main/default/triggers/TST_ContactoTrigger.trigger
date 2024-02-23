@@ -6,9 +6,9 @@
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 **/
 trigger ContactoTrigger on Contact (after insert) {
-    Trigger.new;
+    /*Trigger.new;
     Trigger.newMap;
     Trigger.old;
-    Trigger.oldMap;
+    Trigger.oldMap;*/
     TST_ContactoHandler.execute(Trigger.new,Trigger.newMap,Trigger.old,Trigger.oldMap,System.TriggerOperation);
 }

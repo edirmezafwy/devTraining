@@ -5,7 +5,7 @@
  * @last modified on  : 02-23-2024
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 **/
-@isTest
+@isTest (SeeAllData=false)
 public with sharing class TST_ContactoHanlderTest {
     @TestSetup
     static void makeData(){

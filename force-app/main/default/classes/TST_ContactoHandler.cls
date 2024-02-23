@@ -51,13 +51,13 @@ public with sharing class TST_ContactoHandler {
         //Evaluación de task
         if(!task.isEmpty()){
             //Metodo de insercion
-            doInsertTask();
+            doInsertTask(task);
 
         }
 
         if(!email.isEmpty()){
             //metodo de insercion
-            doInsertEmail();
+            doInsertEmail(email);
         }
     }
     public static void doInsertTask(List<Task> tasks){

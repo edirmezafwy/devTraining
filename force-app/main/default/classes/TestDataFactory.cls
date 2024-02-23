@@ -17,4 +17,13 @@ public with sharing class TestDataFactory {
         insert acc;
         return acc;
     }
+
+    public static Contact createContact(String ctLastName) {
+        Contact ct = new Contact(
+            lastName = ctLastName,
+            Tipo_de_Contacto__c = 'importante'
+        );
+        insert ct;
+        return ct;
+    }
 }
